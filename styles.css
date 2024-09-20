@@ -1,0 +1,271 @@
+ Basic Reset
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #f6f6f6;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdf5e2;
+    margin: -10px -10px;
+    height: 110px;
+}
+
+
+.logo {
+    height: 70px;
+    margin-left: 70px;
+}
+
+.vector-icon {
+    width: 12px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.spacing {
+    margin-right: 9px;
+    margin-left: -2px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6f00;
+}
+
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.book-appointment {
+    display: flex;
+    align-items: center;
+    background-color: #ff6f00;
+    color: #ffffff;
+    font-family: roboto;
+    padding: 18px;
+    border-radius: 30px;
+    font-size: 18px;
+    height: auto;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-appointment:hover {
+    background-color: #22c55e;
+}
+
+.appointment-icon {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.help-button {
+    background-color: #fdf5e2;  
+    color: #000000; 
+    padding: 10px;
+    margin-right: 60px;
+    border-radius: 30px;
+    font-size: 17px;
+    height: auto;
+    border: 1px solid #ff6f00;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    margin-left: 20px; 
+}
+
+.help-button:hover {
+    background-color: #22c55e; 
+}
+
+.button-icon {
+    width: 20px;
+    height: 10px;
+    margin-right: 15px; 
+}
+
+.help-button img:last-child {
+    margin-left: 15px;  
+}
+
+
+.hero {
+    background-color: #e0f7f1;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.hero-content p {
+    margin: 20px 0;
+}
+
+.plan-button {
+    padding: 15px 30px;
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.clinics {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+.rating img {
+    width: 150px;
+}
+
+.clinic-locator {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.services {
+    background-color: #f6f6f6;
+    padding: 40px;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-item {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.guidance {
+    padding: 40px;
+}
+
+.doctors {
+    display: flex;
+    justify-content: space-around;
+}
+
+.doctor img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.doctor h3 {
+    margin-top: 10px;
+}
+
+
+.safety {
+    padding: 40px;
+}
+
+.protocol-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.protocol-item {
+    background-color: white;
+    padding: 20px;
+    width: 45%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .header-buttons {
+        margin-top: 10px;
+    }
+
+    .service-grid,
+    .protocol-grid {
+        flex-direction: column;
+    }
+
+    .service-item,
+    .protocol-item {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .doctor img {
+        width: 80px;
+    }
+} 
